@@ -3,19 +3,19 @@ pipeline {
     stages {
         stage('Clean') {
             steps {
-                sh "mvn clean -e"
+                bat "mvn clean -e"
             }
         }
 
         stage('Compile') {
             steps {
-                sh "mvn compile -e"
+                bat "mvn compile -e"
             }
         }
 
         stage('Test') {
             steps {
-                sh "mvn test -e"
+                bat "mvn test -e"
             }
         }
         
